@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login de la APP</title>
+    <!-- Librería para que se vean los iconos bx-user y bxs-lock-alt -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body class="bodylogin">
+
+    <section class="wrapper">
+        <form action="">
+            <h1>LOGIN APP</h1>
+
+            <!-- Campo Usuario -->
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class="bx bxs-user"></i>
+            </div>
+
+            <!-- Campo Contraseña -->
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <!-- Recordar sesión y recuperar contraseña -->
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <!-- Botón Login -->
+            <button type="submit" class="btn">Login App</button>
+
+            <!-- Registro -->
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>

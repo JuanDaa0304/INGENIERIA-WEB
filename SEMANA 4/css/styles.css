@@ -1,0 +1,247 @@
+```css
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Libre Caslon Condensed", serif;
+}
+
+/*--------Estilos de la cabecera---------*/
+header.mainHeader, section.mainSlider {
+    width: 80%;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+header.mainHeader h2 {
+    padding: 30px;
+    width: 30%;
+    display: inline-block;
+}
+
+header.mainHeader nav {
+    width: 60%;
+    display: inline-block;
+    text-align: right;
+}
+
+header.mainHeader nav a {
+    text-decoration: none;
+    color: #ff0000;
+    padding: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header.mainHeader nav a:hover {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+/*--------Fin Estilos de la cabecera---------*/
+
+
+/*--------Estilos del slider principal---------*/
+section.mainSlider {
+    background-color: #ff3333;
+}
+
+section.mainSlider h2 {
+    padding: 130px 0;
+    text-align: center;
+}
+/*--------Fin del estilo del slider principal---------*/
+
+
+/*----------Estilos de las noticias--------------*/
+section.news {
+    text-align: center;
+}
+
+section.news .newsItem {
+    width: 23.45%;
+    display: inline-block;
+    background-color: #cc3333;
+    margin: 5px;
+    padding: 20px;
+}
+/*---------Fin de estilos de las noticias------------*/
+
+
+footer.mainFooter {
+    background-color: #000;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Animación del botón de noticias */
+.newsItem button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.newsItem button:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.1);
+}
+
+
+/*------------- Estilos del login de la app ----------*/
+body.bodylogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../SEMANA 4/imagenes/imagen.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 420px;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    color: #fff;
+    background: rgba(255, 255, 255, .08);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .4);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input:focus {
+    border-color: rgba(255, 255, 255, .7);
+    transition: border-color 0.3s;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    color: #333;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.wrapper .btn:hover {
+    background: #e6e6e6;
+    transform: scale(1.03);
+}
+
+.wrapper .register-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+
+/*------------- Media Query para móvil ----------*/
+@media (max-width: 450px) {
+    body.bodylogin {
+        background: #333;
+    }
+
+    .wrapper {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
+
+/*------------- Media Query para tableta ----------*/
+@media (min-width: 451px) and (max-width: 800px) {
+    body.bodylogin {
+        background: url('../SEMANA 4/imagenes/IMAGEN_TABLETA.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+
+    .wrapper h1 {
+        color: red;
+    }
+}
+```
