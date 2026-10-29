@@ -1,4 +1,3 @@
-```css
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
@@ -100,7 +99,7 @@ body.bodylogin {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../SEMANA 4/imagenes/imagen.jpg') no-repeat center center;
+    background: url('../imagenes/imagen.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -220,9 +219,8 @@ body.bodylogin {
 /*------------- Media Query para móvil ----------*/
 @media (max-width: 450px) {
     body.bodylogin {
-        background: #333;
+        background: #1e3c72;
     }
-
     .wrapper {
         width: 90%;
         padding: 30px 20px;
@@ -232,16 +230,10 @@ body.bodylogin {
 /*------------- Media Query para tableta ----------*/
 @media (min-width: 451px) and (max-width: 800px) {
     body.bodylogin {
-        background: url('../SEMANA 4/imagenes/IMAGEN_TABLETA.jpg') no-repeat center center;
+        background: url('../imagenes/imagen2.jpg') no-repeat center center;
         background-size: cover;
     }
-
     .wrapper {
         width: 80%;
     }
-
-    .wrapper h1 {
-        color: red;
-    }
 }
-```
